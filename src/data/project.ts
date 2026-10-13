@@ -5,6 +5,7 @@ export type Project = {
     technologies: string[]
     status: string
     githubUrl: string
+    demoUrl?: string
 }
 
 export const projects: Project[] = [
@@ -21,7 +22,7 @@ export const projects: Project[] = [
             'MySQL'
         ],
         status: 'In Progress',
-        githubUrl: 'https://github.com/aungmyoooamo572-web',
+        githubUrl: 'https://github.com/aungmyoooamo572-web/phone_shop_demo.git',
     },
     {
         id: 2,
@@ -35,7 +36,7 @@ export const projects: Project[] = [
             'MySQL',
         ],
         status: 'Practice Project',
-        githubUrl: 'https://github.com/aungmyoooamo572-web',
+        githubUrl: 'https://github.com/aungmyoooamo572-web/Online-Bookstore.git',
     },
     {
     id: 3,
