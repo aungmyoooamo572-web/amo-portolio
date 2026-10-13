@@ -20,7 +20,7 @@ function App() {
             onClick={() => setMenuOpen(false)}
             className="text-xl font-bold tracking-tight text-slate-900"
           >
-            AMO<span className="text-blue-600">.</span>
+            Aung Myo Oo<span className="text-blue-600">.</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -162,7 +162,7 @@ function App() {
         </div>
 
         {/* Developer Card */}
-        <div className="mx-auto w-full max-w-sm">
+        <div className="mx-auto w-full max-w-sm min-w-0">
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl shadow-slate-200/60">
             <div className="flex items-center gap-1.5 border-b border-slate-100 pb-5">
               <span className="h-3 w-3 rounded-full bg-red-400" />
@@ -324,7 +324,7 @@ function App() {
             </p>
           </div>
 
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <article className="rounded-2xl border border-slate-200 bg-white p-6 transition hover:border-blue-200 hover:shadow-lg hover:shadow-slate-200/50">
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
                 <svg
