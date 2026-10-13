@@ -114,11 +114,9 @@ function App() {
             Computer Science Student · Aspiring Full-Stack Developer
           </p>
 
-          <h1 className="max-w-2xl text-4xl font-bold leading-[1.1] tracking-[-0.04em] sm:text-5xl lg:text-6xl">
-            Hi
-            <span className="mt-2 block text-blue-600">
-              I build web applications.
-            </span>
+          <h1 className="max-w-2xl text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            Hi, I build
+            <span className="text-blue-600"> web applications.</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-8 text-slate-600 sm:text-lg">
@@ -150,11 +148,11 @@ function App() {
               Technologies I Use
             </p>
 
-            <div className="flex flex-wrap gap-2">
+            <div className="mt-4 flex flex-wrap gap-2">
               {skills.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-600"
+                  className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700"
                 >
                   {skill}
                 </span>
@@ -326,7 +324,7 @@ function App() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             <article className="rounded-2xl border border-slate-200 bg-white p-6 transition hover:border-blue-200 hover:shadow-lg hover:shadow-slate-200/50">
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
                 <svg
@@ -422,56 +420,49 @@ function App() {
         </div>
       </section>
 
-      
+{/* Contact Section */}
 <section
   id="contact"
-  className="border-t border-slate-200 bg-slate-50 px-6 py-20"
+  className="border-t border-slate-200 bg-white px-5 py-20 sm:px-6 sm:py-24"
 >
   <div className="mx-auto max-w-3xl text-center">
-    <p className="text-sm font-semibold uppercase tracking-widest text-blue-600">
+    <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-600">
       Get In Touch
     </p>
 
     <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-      
-      <p className="mx-auto mt-4 max-w-xl leading-7 text-slate-600">
-        I'm open to entry-level developer opportunities where I can apply my
-        skills in Java, Spring Boot, React, and MySQL, learn from experienced
-        developers, and contribute to meaningful projects.
-      </p>
-
+      Let's Work Together.
     </h2>
 
     <p className="mx-auto mt-4 max-w-xl leading-7 text-slate-600">
-      I'm looking for opportunities to grow as a developer, learn from
-      experienced teams, and contribute to useful software projects.
+      I'm open to entry-level developer opportunities where I can apply
+      my skills in Java, Spring Boot, React, and MySQL, learn from
+      experienced developers, and contribute to meaningful projects.
     </p>
 
-    <div className="mt-8 flex flex-wrap justify-center gap-4">
-      
-    
-<a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=aungmyoooamo572@gmail.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
->
-  Email Me
-  <span className="ml-2" aria-hidden="true">↗</span>
-</a>
+    <div className="mt-8 flex flex-wrap justify-center gap-3">
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=aungmyoooamo572@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
+      >
+        Email Me
+        <span aria-hidden="true">↗</span>
+      </a>
 
       <a
         href="https://github.com/aungmyoooamo572-web"
         target="_blank"
-        rel="noreferrer"
-        className="rounded-xl border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-700 transition hover:border-blue-300 hover:text-blue-600"
+        rel="noopener noreferrer"
+        className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700"
       >
-        GitHub Profile ↗
+        GitHub Profile
+        <span aria-hidden="true">↗</span>
       </a>
     </div>
   </div>
 </section>
-
 <footer className="border-t border-slate-200 bg-white px-6 py-6">
   <div className="mx-auto flex max-w-6xl flex-col gap-2 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
     <p className="text-sm text-slate-500">

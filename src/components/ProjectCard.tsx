@@ -17,7 +17,7 @@ function ProjectCard({ project }: ProjectCardProps) {
     "bg-slate-100 text-slate-600 ring-slate-500/20"
 
   return (
-    <article className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-xl hover:shadow-slate-200/60">
+    <article className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 transition-y-1 hover:border-blue-200 hover:shadow-slate-200/60 sm:p-6 ">
       {/* Card Header */}
       <div className="mb-5 flex items-start justify-between gap-3">
         <div
