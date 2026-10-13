@@ -1,3 +1,5 @@
+import { projects } from "./data/project"
+import ProjectCard from "./components/ProjectCard"
 
 const skills = ['Java', 'Spring Boot', 'React', 'MySQL', 'Tailwind CSS']
 
@@ -144,23 +146,45 @@ function App() {
       </section>
 
       {/* Placeholder sections for the next steps */}
-      <section
-        id="projects"
-        className="border-t border-slate-200 bg-white px-6 py-20"
+      
+<section
+  id="projects"
+  className="border-t border-slate-200 bg-white px-6 py-20 sm:py-24"
+>
+  <div className="mx-auto max-w-6xl">
+    <p className="text-sm font-semibold uppercase tracking-widest text-blue-600">
+      My Work
+    </p>
+
+    <div className="mt-3 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+      <div>
+        <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          Featured Projects
+        </h2>
+        <p className="mt-3 max-w-xl leading-7 text-slate-600">
+          A selection of applications I have built while learning
+          backend and frontend development.
+        </p>
+      </div>
+
+      <a
+        href="https://github.com/aungmyoooamo572-web"
+        target="_blank"
+        rel="noreferrer"
+        className="inline-flex items-center gap-2 self-start text-sm font-semibold text-blue-600 hover:text-blue-700"
       >
-        <div className="mx-auto max-w-6xl">
-          <p className="text-sm font-semibold uppercase tracking-widest text-blue-600">
-            My Work
-          </p>
-          <h2 className="mt-3 text-3xl font-bold">Featured Projects</h2>
-          <p className="mt-3 text-slate-600">
-            Projects I've built and the problems I've worked on.
-          </p>
-          <p className="mt-6 text-sm text-slate-400">
-            Project cards coming next.
-          </p>
-        </div>
-      </section>
+        Explore GitHub <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <div className="mt-10 grid gap-6 md:grid-cols-2">
+      {projects.map((project) => (
+        <ProjectCard key={project.id} project={project} />
+      ))}
+    </div>
+  </div>
+</section>
+
 
       <section id="about" className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-2xl font-bold">About Me</h2>
